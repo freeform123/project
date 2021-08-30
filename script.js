@@ -1,25 +1,18 @@
-"use strict";
+const numberOfFilims = +prompt('Сколько фильмов вы посмотрели?', '');
 
-a = 15;
-console.log(a);
+const personalMovieDB = {
+    count: numberOfFilims,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
 
-let number = 5;
-const leftBorderWidth = 1;
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-number = 10;
-console.log(number);
-
-leftBorderWidth = 10;
-
-const obj = {
-    a: 50
-}
-
-obj.a = 10;
-
-console.log(obj);
-
-
-{
-    let result = 50;
-console.log(result);  }
+console.log(personalMovieDB);
